@@ -1,0 +1,400 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("https://images.unsplash.com/photo-1592066575517-58df903152f2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 50px;
+}
+
+.links{
+    flex: 1;
+    text-align: right;
+}
+
+.links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(123, 82, 5);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.links ul li :hover::after{
+    width: 70%
+}
+
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav .fa {
+    display: none;
+}
+
+/*----------------main-------------------*/
+
+.main {
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 70px;
+}
+
+.main p {
+    font-size: 16px;
+    margin: 12px 0 40px;
+}
+
+.bttn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+}
+
+.bttn:hover {
+    transition: 1s;
+    background: rgb(123, 82, 5);
+    border: 1px solid rgb(123, 82, 5);
+}
+
+/*-------Course----------*/
+.course {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.column {
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #f7a5a5;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    flex-basis: 30%;
+}
+
+.column:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*-------------school--------*/
+.school {
+    width: 70%;
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;   
+}
+
+.row-img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    flex-basis: 30%;
+}
+
+row-img img {
+    width: 100%;
+}
+
+/*------------Footer--------*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.footer-section {
+    margin: 10px;
+    min-width: 200px;
+    flex: 1;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-bottom p {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/*-----------------About us------------*/
+.about {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("https://images.unsplash.com/photo-1592066575517-58df903152f2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.about h1 {
+    margin-top: 90px;
+}
+
+.about-us {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 80px;
+}
+
+.abous {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-img h1 {
+    padding-top: 0;
+}
+
+.about-img p {
+    padding: 15px 0 25px;
+    text-align: justify;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+/*--------Login---------*/
+
+.form {
+    width: 250px;
+    height: 380px;
+    position: absolute;
+    bottom: 60px;
+    left: 800px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+
+/*------------Courses----------*/
+.abouts {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("https://cdn.ila-france.com/wp-content/uploads/2015/02/our-students-1750x660-1.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*---------------facilities----------*/
+.facility {
+    width: 80%;
+    margin: aut0;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities {
+    flex-basis: 33%;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+}
+
+.facilities img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.facilities p {
+    padding: 0;
+}
+
+.facilities h3 {
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+
+/*---------------media-----------------*/
+
+@media(max-width: 760px) {
+.links ul li{
+    display: block;
+}
+
+.links{
+    position: absolute;
+    text-align: left;
+}
+
+nav .fa {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.links ul {
+    padding: 255px;
+}
+
+.row {
+    flex-direction: column;
+}
+}
